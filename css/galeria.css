@@ -1,0 +1,17 @@
+img {
+    width: 100%;
+}
+
+.categoria {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.categoria i {
+    font-size: 20px;
+}
+
+.botonNegro {
+    margin-top: 100px;
+}
