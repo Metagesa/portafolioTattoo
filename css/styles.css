@@ -64,19 +64,6 @@ section {
     text-align: center;
 }
 
-.carrusel {
-    align-self: center;
-    width: 90%;
-    height: 20vw;
-    overflow: hidden;
-}
-
-.carrusel .carrusel-item {
-    object-fit: cover;
-    width: 100%; /* Ajustar al 100% del contenedor del carrusel */
-    height: 100%; /* Ajustar a la altura del carrusel */
-}
-
 i {
     font-size: 10px;
 }
@@ -122,6 +109,15 @@ footer {
     align-items: center;
     justify-content: space-between;
     margin: 0 15px 0 15px;
+}
+
+.faq-respuesta {
+    display: none;
+    margin: 0 15px 0 15px;
+}
+
+.visible {
+    display: block;
 }
 
 /* Estilos de el encabezado de los html de sobreMi y galeria */

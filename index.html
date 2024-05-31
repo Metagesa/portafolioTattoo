@@ -16,7 +16,7 @@
     <!-- Título y links locales -->
     <title>Maty Rego - Tatto Portafolio</title>
     <link rel="stylesheet" href="css/styles.css">
-    <!-- Include p5.js library -->
+    <link rel="stylesheet" href="lib/owlcarousel/owl.carousel.min.css">
     <script src="https://cdn.jsdelivr.net/npm/p5@1.9.4/lib/p5.min.js"></script>
 </head>
 
@@ -40,14 +40,14 @@
         <section id="sobreMi">
             <h2 class="aberracion">Hola, soy Maty</h2>
             <!-- Carrusel infinito provisorio -->
-            <div class="carrusel">
+            <div class="owl-carousel" id="carrusel-sobreMi">
                 <img src="images/maty4.jpg" alt="Foto de Maty tatuando">
                 <img src="images/maty2.jpg" alt="Foto de Maty tatuando">
                 <img src="images/maty3.jpg" alt="Foto de Maty tatuando">
                 <img src="images/maty4.jpg" alt="Foto de Maty tatuando">
                 <img src="images/maty2.jpg" alt="Foto de Maty tatuando">
                 <img src="images/maty3.jpg" alt="Foto de Maty tatuando">
-                
+
             </div>
             <div class="centrado">
                 <a href="pages/sobreMi.html">Más sobre mí</a>
@@ -58,7 +58,7 @@
         <section id="trabajos">
             <h2 class="aberracion">Mis trabajos</h2>
             <!-- Carrusel "manual" provisorio -->
-            <div class="carrusel">
+            <div class="owl-carousel"  id="carrusel-trabajos">
                 <img src="images/tattoo1.jpg" alt="tatuaje">
                 <img src="images/tattoo2.jpg" alt="tatuaje">
                 <img src="images/tattoo3.jpg" alt="tatuaje">
@@ -79,18 +79,50 @@
             <div class="faq-item" onclick="">
                 <!-- La idea sería que al tocar se abra y aparezca la respuesta. -->
                 <div class="faq-pregunta">
-                    <p>Pregunta muy interesante</p>
+                    <p>¿Cuánto puede salir mi tatuaje?</p>
                     <i class="fa-solid fa-caret-down"></i>
                 </div>
-                <div class="faq-respuesta"></div>
+                <div class="faq-respuesta">
+                    <p>El precio de cada tatuaje varía según el tamaño y varios factores más. Si te interesa averiguar
+                        por un tatuaje en particular, podés contactarte conmigo haciendo click en "Quiero un tattoo" o
+                        por mensaje privado en mis redes sociales</p>
+                </div>
             </div>
 
             <div class="faq-item" onclick="">
                 <div class="faq-pregunta">
-                    <p>Pregunta muy interesante</p>
+                    <p>¿Puedo traerte un dibujo para tatuarme?</p>
                     <i class="fa-solid fa-caret-down"></i>
                 </div>
-                <div class="faq-respuesta"></div>
+                <div class="faq-respuesta">
+                    <p>¡Por supuesto! Siempre tené en cuenta que quizás el dibujo puede no coincidir con mi estilo, y
+                        para evitar inconvenientes puede que te derive con otro tatuador. Por si acaso, adjunta una
+                        imagen del dibujo que querés al momento de hacer tu consulta junto con el resto de la info.</p>
+                </div>
+            </div>
+
+            <div class="faq-item" onclick="">
+                <div class="faq-pregunta">
+                    <p>¿Puedo traerte un dibujo para tatuarme?</p>
+                    <i class="fa-solid fa-caret-down"></i>
+                </div>
+                <div class="faq-respuesta">
+                    <p>¡Por supuesto! Siempre tené en cuenta que quizás el dibujo puede no coincidir con mi estilo, y
+                        para evitar inconvenientes puede que te derive con otro tatuador. Por si acaso, adjunta una
+                        imagen del dibujo que querés al momento de hacer tu consulta junto con el resto de la info.</p>
+                </div>
+            </div>
+
+            <div class="faq-item" onclick="">
+                <div class="faq-pregunta">
+                    <p>¿Puedo traerte un dibujo para tatuarme?</p>
+                    <i class="fa-solid fa-caret-down"></i>
+                </div>
+                <div class="faq-respuesta">
+                    <p>¡Por supuesto! Siempre tené en cuenta que quizás el dibujo puede no coincidir con mi estilo, y
+                        para evitar inconvenientes puede que te derive con otro tatuador. Por si acaso, adjunta una
+                        imagen del dibujo que querés al momento de hacer tu consulta junto con el resto de la info.</p>
+                </div>
             </div>
         </section>
 
@@ -116,9 +148,16 @@
             <img src="images/tiktok.png" alt="">
         </div>
     </footer>
+
     <script src="js/aberracion.js"></script>
-    <script src="js/carrusel.js"></script>
     <script src="js/sketch.js"></script>
+
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"
+        integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+
+    <script src="js/carrusel.js"></script>
+    <script src="js/main.js"></script>
 </body>
 
 </html>
