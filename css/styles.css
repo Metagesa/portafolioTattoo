@@ -204,3 +204,98 @@ footer {
 .owl-carousel {
     margin: 0;
 }
+
+/*----------------------------------------------------------------------------------------*/
+
+@media (max-width: 599px) {
+    nav ul {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 0 10px;
+    }
+
+    .logo {
+        font-size: 150%;
+    }
+
+    .botonBlanco, .botonNegro {
+        padding: 10px 15px;
+        font-size: 80%;
+    }
+
+    .img-medio {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    #imgfaq {
+        object-fit: cover;
+    }
+
+    .faq-desplegables {
+        width: 100%;
+    }
+}
+
+@media (min-width: 600px) and (max-width: 1023px) {
+    nav ul {
+        flex-direction: row;
+        justify-content: space-around;
+    }
+
+    .logo {
+        font-size: 140%;
+    }
+
+    .botonBlanco, .botonNegro {
+        padding: 10px 18px;
+        font-size: 85%;
+    }
+
+    .img-medio {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    #imgfaq {
+        min-width: 100%;
+    }
+
+    .faq-desplegables {
+        width: 100%;
+    }
+}
+
+@media (min-width: 1024px) {
+    nav ul {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .logo {
+        font-size: 120%;
+    }
+
+    .botonBlanco, .botonNegro {
+        padding: 13px 40px;
+        font-size: 100%;
+    }
+
+    .img-medio {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 50%;
+        height: 35vh;
+    }
+
+    .faq-desplegables {
+        width: 45%;
+    }
+}
