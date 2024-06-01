@@ -2,7 +2,7 @@ body {
     font-family: "League Spartan", sans-serif;
     font-optical-sizing: auto;
     font-style: normal;
-    background-color: rgb(112, 112, 112);
+    background-color: #1E1E4B;
     color: rgb(255, 255, 255);
     margin: 0;
     padding: 0;
@@ -55,8 +55,11 @@ a {
 section {
     display: flex;
     flex-direction: column;
-    padding: 20px;
     overflow: hidden;
+}
+
+section > * {
+    margin: 20px;
 }
 
 .centrado {
@@ -97,23 +100,66 @@ footer {
     margin-left: 10px;
 }
 
+#faq {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+#faq h2 {
+    width: 100%;
+}
+
+.img-medio {
+    margin-top: 0;
+    margin-bottom: 0;
+    overflow: hidden;
+    width: 50%;
+    height: 35vh;
+}
+
+#imgfaq {
+    margin: 0;
+}
+
+.faq-desplegables {
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    height: fit-content;
+    width: 45%;
+}
+
+.faq-desplegables li {
+    width: 100%;
+}
+
 .faq-item {
-    background-color: #000000;
+    background-color: #4B4B69;
+    margin: 0  20px 20px 20px;
     padding: 0 10px 0 10px;
     cursor: pointer;
-    margin-bottom: 5px;
 }
 
 .faq-pregunta {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    font-size: 1.3rem;
     margin: 0 15px 0 15px;
 }
 
 .faq-respuesta {
     display: none;
     margin: 0 15px 0 15px;
+    padding-bottom: 20px;
+    font-size: 1.2rem;
+}
+
+.faq-respuesta p {
+    margin: 0
 }
 
 .visible {
@@ -153,4 +199,8 @@ footer {
 
 .chromatic.b {
     color: blue;
+}
+
+.owl-carousel {
+    margin: 0;
 }
