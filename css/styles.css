@@ -113,13 +113,16 @@ footer {
 .img-medio {
     margin-top: 0;
     margin-bottom: 0;
-    overflow: hidden;
+   overflow: hidden;
+
     width: 50%;
-    height: 35vh;
+    height: auto;
+
 }
 
 #imgfaq {
     margin: 0;
+
 }
 
 .faq-desplegables {
