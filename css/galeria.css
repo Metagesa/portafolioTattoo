@@ -1,17 +1,24 @@
-img {
-    width: 100%;
-}
-
 .categoria {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
+    width: 100%;
+    margin-bottom: 40px;
 }
 
-.categoria i {
-    font-size: 20px;
+.categoria h3 {
+    text-align: center;
+    font-size: 24px;
+    margin-bottom: 10px;
 }
 
-.botonNegro {
-    margin-top: 100px;
+.slider {
+    position: relative;
+}
+
+.slide {
+    padding: 5px;
+}
+
+.slide img {
+    width: 100%;
+    height: auto;
+    display: block;
 }

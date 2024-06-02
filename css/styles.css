@@ -8,6 +8,10 @@ body {
     padding: 0;
 }
 
+.espaciador {
+    height: 80px;
+}
+
 nav {
     background-color: #000000;
     padding: 10px 0;
@@ -27,6 +31,13 @@ nav ul {
 a {
     color: rgb(255, 255, 255);
     text-decoration: none;
+}
+
+.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 99999999999999999999999999;
 }
 
 .logo {
@@ -58,17 +69,34 @@ section {
     overflow: hidden;
 }
 
-section > * {
+section>* {
     margin: 20px;
 }
 
+.titulo {
+    font-size: 2.5rem;
+}
+
+.hero {
+    display: block;
+    background-image: linear-gradient(rgba(0, 0, 73, 0.507), rgba(0, 0, 77, 0.322)), url('/images/maty4.jpg');
+    height: 40vw;
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: 0;
+}
+
 .centrado {
-    margin-top: 15px;
-    text-align: center;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
 }
 
 i {
-    font-size: 10px;
+    margin-left: 3px;
+    font-size: 12px;
 }
 
 .botonNegro {
@@ -86,9 +114,12 @@ i {
 }
 
 footer {
+    background-color: #000000;
     display: flex;
+    flex-direction: row;
     justify-content: space-around;
     align-items: center;
+    height: 60px;
 }
 
 .iconos {
@@ -97,7 +128,19 @@ footer {
 }
 
 .iconos img {
-    margin-left: 10px;
+    margin: 0 0 5px 5px;
+    width: 20px;
+    height: auto;
+}
+
+.icono-redes {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.nombre-red {
+    display: block;
 }
 
 #faq {
@@ -110,21 +153,6 @@ footer {
     width: 100%;
 }
 
-.img-medio {
-    margin-top: 0;
-    margin-bottom: 0;
-   overflow: hidden;
-
-    width: 50%;
-    height: auto;
-
-}
-
-#imgfaq {
-    margin: 0;
-
-}
-
 .faq-desplegables {
     display: flex;
     flex-direction: column;
@@ -132,7 +160,7 @@ footer {
     margin: 0;
     padding: 0;
     height: fit-content;
-    width: 45%;
+    width: 50%;
 }
 
 .faq-desplegables li {
@@ -141,7 +169,7 @@ footer {
 
 .faq-item {
     background-color: #4B4B69;
-    margin: 0  20px 20px 20px;
+    margin: 0 20px 20px 20px;
     padding: 0 10px 0 10px;
     cursor: pointer;
 }
@@ -169,7 +197,6 @@ footer {
     display: block;
 }
 
-/* Estilos de el encabezado de los html de sobreMi y galeria */
 .seccion {
     display: flex;
     align-items: center;
@@ -211,19 +238,19 @@ footer {
 /*----------------------------------------------------------------------------------------*/
 
 @media (max-width: 599px) {
-    nav ul {
-        flex-direction: column;
-        align-items: flex-start;
-        padding: 0 10px;
-    }
 
     .logo {
         font-size: 150%;
     }
 
-    .botonBlanco, .botonNegro {
+    .botonBlanco,
+    .botonNegro {
         padding: 10px 15px;
         font-size: 80%;
+    }
+
+    .titulo {
+        font-size: 1.8rem;
     }
 
     .img-medio {
@@ -241,21 +268,38 @@ footer {
     .faq-desplegables {
         width: 100%;
     }
+
+    footer {
+        height: 60px;
+    }
+
+    .iconos img {
+        width: 30px;
+    }
+
+    .nombre-red {
+        display: none;
+    }
+
+    .hero {
+        height: 70vw;
+    }
 }
 
 @media (min-width: 600px) and (max-width: 1023px) {
-    nav ul {
-        flex-direction: row;
-        justify-content: space-around;
-    }
 
     .logo {
-        font-size: 140%;
+        font-size: 120%;
     }
 
-    .botonBlanco, .botonNegro {
+    .botonBlanco,
+    .botonNegro {
         padding: 10px 18px;
         font-size: 85%;
+    }
+
+    #faq {
+        height: fit-content;
     }
 
     .img-medio {
@@ -273,6 +317,22 @@ footer {
     .faq-desplegables {
         width: 100%;
     }
+
+    footer {
+        height: 60px;
+    }
+
+    .iconos img {
+        width: 30px;
+    }
+
+    .nombre-red {
+        display: none;
+    }
+
+    .hero {
+        height: 50vw;
+    }
 }
 
 @media (min-width: 1024px) {
@@ -282,23 +342,41 @@ footer {
     }
 
     .logo {
-        font-size: 120%;
+        font-size: 140%;
     }
 
-    .botonBlanco, .botonNegro {
+    .botonBlanco,
+    .botonNegro {
         padding: 13px 40px;
         font-size: 100%;
     }
 
+    #faq {
+        height: 50vw;
+    }
+
     .img-medio {
         display: flex;
+        overflow: hidden;
         justify-content: center;
         align-items: center;
         width: 50%;
-        height: 35vh;
+        margin: 0 0 20px 20px;
     }
 
     .faq-desplegables {
-        width: 45%;
+        width: 48%;
+        height: auto;
+    }
+}
+
+@media (min-width: 1200px) {
+
+    #faq {
+        height: 40vw;
+    }
+
+    .iconos {
+        font-size: 120%;
     }
 }

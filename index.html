@@ -21,9 +21,10 @@
 </head>
 
 <body>
+    <div class="espaciador"></div>
     <!-- Encabezado -->
     <header>
-        <nav>
+        <nav class="sticky">
             <ul>
                 <li><a href="index.html" class="logo">Maty<br>Rego</a></li>
                 <li><a href="#sobreMi" class="ocultar">Sobre mí</a></li>
@@ -38,7 +39,7 @@
     <!-- Contenido principal de la One Page -->
     <main>
         <section id="sobreMi">
-            <h2 class="aberracion">Hola, soy Maty</h2>
+            <h2 class="titulo aberracion">Hola, soy Maty</h2>
             <!-- Carrusel infinito provisorio -->
             <div class="owl-carousel" id="carrusel-sobreMi">
                 <img src="images/maty4.jpg" alt="Foto de Maty tatuando">
@@ -49,14 +50,14 @@
                 <img src="images/maty3.jpg" alt="Foto de Maty tatuando">
 
             </div>
-            <div class="centrado">
-                <a href="pages/sobreMi.html">Más sobre mí</a>
+            <div class="centrado aberracion">
+                <a class="" href="pages/sobreMi.html">Más sobre mí</a>
                 <i class="fa-solid fa-angle-right"></i>
             </div>
         </section>
 
         <section id="trabajos">
-            <h2 class="aberracion">Mis trabajos</h2>
+            <h2 class="titulo aberracion">Mis trabajos</h2>
             <!-- Carrusel "manual" provisorio -->
             <div class="owl-carousel" id="carrusel-trabajos">
                 <img src="images/tattoo1.jpg" alt="tatuaje">
@@ -68,14 +69,14 @@
                 <img src="images/tattoo7.jpg" alt="tatuaje">
                 <img src="images/tattoo8.jpg" alt="tatuaje">
             </div>
-            <div class="centrado">
-                <a class="aberracion" href="pages/galeria.html">Mi galería</a>
+            <div class="centrado aberracion">
+                <a class="" href="pages/galeria.html">Mi galería</a>
                 <i class="fa-solid fa-angle-right"></i>
             </div>
         </section>
 
         <section id="faq">
-            <h2 class="aberracion">Preguntas frecuentes</h2>
+            <h2 class="titulo aberracion">Preguntas frecuentes</h2>
 
             <div class="img-medio">
                 <img src="images\maty5horizontal.jpg" alt="" id="imgfaq">
@@ -150,25 +151,22 @@
         </section>
 
         <section id="contacto">
-            <h2 class="aberracion">Contacto</h2>
-            <div class="centrado">
-                <button class="botonNegro">Quiero un Tatto</button>
+            <h2 class="titulo aberracion">Contacto</h2>
+            <div class="hero centrado">
+                <button class="botonNegro aberracion">Quiero un Tatto</button>
             </div>
         </section>
     </main>
 
     <footer>
         <div class="iconos">
-            <a href="" target="_blank">Instagram</a>
-            <img src="images/instagram.png" alt="">
+            <a class="icono-redes" href="" target="_blank"><span class="nombre-red">Instagram </span><img src="images/instagram.png" alt=""></a>
         </div>
         <div class="iconos">
-            <a href="" target="_blank">Facebook</a>
-            <img src="images/facebook.png" alt="">
+            <a class="icono-redes" href="" target="_blank"><span class="nombre-red">Facebook </span><img src="images/facebook.png" alt=""></a>
         </div>
         <div class="iconos">
-            <a href="" target="_blank">TikTok</a>
-            <img src="images/tiktok.png" alt="">
+            <a class="icono-redes" href="" target="_blank"><span class="nombre-red">TikTok </span><img src="images/tiktok.png" alt=""></a>
         </div>
     </footer>
 

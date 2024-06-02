@@ -22,6 +22,7 @@ $(document).ready(function () {
             }
         }
     });
+
     var carruselTrabajos = $('#carrusel-trabajos');
     carruselTrabajos.owlCarousel({
         items: 3,
