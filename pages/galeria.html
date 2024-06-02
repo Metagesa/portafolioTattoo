@@ -5,19 +5,22 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+    <!-- Fuentes de Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@100..900&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
-
+    <!-- Iconos de Font Awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
         integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
-
-    <link rel="stylesheet" href="../css/styles.css">
+        crossorigin="anonymous" referrerpolicy="no-referrer">
+    <!-- librerías: css de tiny slider para carruseles y p5js para enimación de aberración cromática con Perlin noise -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.4/tiny-slider.css">
+    <script src="https://cdn.jsdelivr.net/npm/p5@1.9.4/lib/p5.min.js"></script>
+    <!-- Título y links locales -->
+    <title>Maty Rego - Tatto Portafolio</title>
+    <link rel="stylesheet" href="../css/styles.css">
     <link rel="stylesheet" href="../css/galeria.css">
-    <title>Galería - Maty Rego</title>
 </head>
 
 <body>
@@ -25,15 +28,21 @@
     <header>
         <nav class="sticky">
             <ul>
-                <li><a href="../index.html" class="logo">Maty<br>Rego</a></li>
-                <li><button class="botonBlanco">Quiero un Tattoo</button></li>
+                <li><a href="index.html" class="logo nav-seccion aberracion">Maty<br>Rego</a></li>
+                <li><a href="../index.html" class="nav-seccion">Inicio</a></li>
+                <li><a href="sobreMi.html" class="nav-seccion">Sobre mí</a></li>
+                <li class="cta"><button class="botonBlanco"
+                        onclick="window.location.href='pages/formulario.html'">Quiero un Tattoo</button></li>
             </ul>
         </nav>
     </header>
 
     <main>
         <section class="galeria">
-            <h2 class="titulo aberracion">Galería</h2>
+            <div class="titulo seccion">
+                <i class="fa-solid fa-angle-left"></i>
+                <h2 class="aberracion">Galería</h1>
+            </div>
             <div class="galeria-categorias">
                 <div class="categoria">
                     <h3>Tradicional</h3>
@@ -130,8 +139,28 @@
         </section>
     </main>
 
+    <footer>
+        <div class="iconos">
+            <a class="icono-redes" href="" target="_blank"><span class="nombre-red">Instagram </span><img
+                    src="../images/instagram.png" alt=""></a>
+        </div>
+        <div class="iconos">
+            <a class="icono-redes" href="" target="_blank"><span class="nombre-red">Facebook </span><img
+                    src="../images/facebook.png" alt=""></a>
+        </div>
+        <div class="iconos">
+            <a class="icono-redes" href="" target="_blank"><span class="nombre-red">TikTok </span><img
+                    src="../images/tiktok.png" alt=""></a>
+        </div>
+    </footer>
+
     <script src="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.4/min/tiny-slider.js"></script>
     <script src="../js/galeria.js"></script>
+
+    <!-- aberracion.js contiene funciones para el sketch.js de p5js. Está separado para mantener el orden si en algún momento se necesitan ejecutar otras animaciones o cambios con p5js, ya que no maneja bien varios sketchs en la misma página sin complicar el código -->
+
+    <script src="../js/aberracion.js"></script>
+    <script src="../js/sketch.js"></script>
 </body>
 
 </html>

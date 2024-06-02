@@ -34,12 +34,11 @@
     <header>
         <nav class="sticky">
             <ul>
-                <li><a href="index.html" class="logo">Maty<br>Rego</a></li>
-                <li><a href="#sobreMi" class="ocultar">Sobre mí</a></li>
-                <li><a href="#trabajos" class="ocultar">Mis trabajos</a></li>
-                <li><a href="#faq" class="ocultar">Preguntas frecuentes</a></li>
-                <li><a href="#contacto" class="ocultar">Contacto</a></li>
-                <li><button class="botonBlanco">Quiero un Tatto</button></li>
+                <li><a href="index.html" class="logo nav-seccion aberracion">Maty<br>Rego</a></li>
+                <li><a href="pages/sobreMi.html" class="nav-seccion">Sobre mí</a></li>
+                <li><a href="pages/galeria.html" class="nav-seccion">Mis trabajos</a></li>
+                <li class="cta"><button class="botonBlanco"
+                        onclick="window.location.href='pages/formulario.html'">Quiero un Tattoo</button></li>
             </ul>
         </nav>
     </header>
@@ -154,8 +153,6 @@
                         </div>
                     </div>
                 </li>
-
-                
             </ul>
 
         </section>
@@ -166,7 +163,8 @@
             <!-- Hero Image con CTA -->
 
             <div class="hero centrado">
-                <button class="botonNegro aberracion">Quiero un Tatto</button>
+                <button class="botonNegro aberracion" onclick="window.location.href='pages/formulario.html'">Quiero un
+                    Tattoo</button>
             </div>
         </section>
     </main>
@@ -188,7 +186,7 @@
         </div>
     </footer>
 
-    <!-- aberración.js contiene funciones para el sketch.js de p5js. Está separado para mantener el orden si en algún momento se necesitan ejecutar otras animaciones o cambios con p5js, ya que no maneja bien varios sketchs en la misma página sin complicar el código -->
+    <!-- aberracion.js contiene funciones para el sketch.js de p5js. Está separado para mantener el orden si en algún momento se necesitan ejecutar otras animaciones o cambios con p5js, ya que no maneja bien varios sketchs en la misma página sin complicar el código -->
 
     <script src="js/aberracion.js"></script>
     <script src="js/sketch.js"></script>

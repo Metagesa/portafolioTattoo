@@ -22,7 +22,6 @@ document.addEventListener('DOMContentLoaded', function () {
             controls: false,
             nav: false,
             mouseDrag:true,
-
             responsive: {
                 0: {
                     items: 1,

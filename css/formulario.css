@@ -1,0 +1,79 @@
+#formulario {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    margin: 20px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    max-width: 600px;
+    width: 100%;
+    background-color: #2E2E5B;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+form label {
+    margin: 10px 0 5px;
+    font-size: 1.1rem;
+}
+
+.error {
+    border: 2px solid red !important;
+}
+
+
+form input[type="text"],
+form input[type="email"],
+form input[type="file"],
+form textarea {
+    padding: 10px;
+    margin-bottom: 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    background-color: #fff;
+    color: #000;
+}
+
+form textarea {
+    resize: vertical;
+    height: 150px;
+}
+
+form button {
+    font-family: "League Spartan", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    font-size: 100%;
+    font-weight: bold;
+    padding: 13px 40px;
+    border-radius: 20px;
+    border: 0;
+    background-color: #000000;
+    color: rgb(255, 255, 255);
+    cursor: pointer;
+}
+
+/* Responsive Design */
+@media (max-width: 599px) {
+    #formulario {
+        margin: 10px;
+    }
+
+    form {
+        padding: 15px;
+    }
+
+    form label {
+        font-size: 1rem;
+    }
+
+    form button {
+        padding: 10px 20px;
+        font-size: 90%;
+    }
+}

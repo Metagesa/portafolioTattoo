@@ -5,6 +5,10 @@ p {
     margin-bottom: 0;
 }
 
+.titulo * {
+    font-size: 2rem;
+}
+
 .banner-sobreMi {
     display: flex;
     flex-direction: column;
