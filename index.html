@@ -1,6 +1,11 @@
 <!DOCTYPE html>
 <html lang="es">
 
+<!-- ¡Hola! Este es un trabajo realizado para el curso de Desarrollo Full Stack Python del programa Codo a Codo, desarrollado por la Agencia de Habilidades para el Futuro de Buenos Aires Aprende. -->
+<!-- Si bien no es el sitio real, Maty si es tatuador y sus datos son los reales. Nos dio permiso para hacer el sitio a su nombre a cambio de poder utilizarlo con su propio dominio y demás. -->
+<!-- ¡Saludos! -->
+
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -12,15 +17,18 @@
     <!-- Iconos de Font Awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
         integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
+        crossorigin="anonymous" referrerpolicy="no-referrer">
+    <!-- librerías: css de tiny slider para carruseles y p5js para enimación de aberración cromática con Perlin noise -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.4/tiny-slider.css">
+    <script src="https://cdn.jsdelivr.net/npm/p5@1.9.4/lib/p5.min.js"></script>
     <!-- Título y links locales -->
     <title>Maty Rego - Tatto Portafolio</title>
     <link rel="stylesheet" href="css/styles.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.4/tiny-slider.css">
-    <script src="https://cdn.jsdelivr.net/npm/p5@1.9.4/lib/p5.min.js"></script>
+
 </head>
 
 <body>
+    <!-- Espacio para el header sticky -->
     <div class="espaciador"></div>
     <!-- Encabezado -->
     <header>
@@ -36,11 +44,11 @@
         </nav>
     </header>
 
-    <!-- Contenido principal de la One Page -->
+    <!-- Contenido principal del home -->
     <main>
         <section id="sobreMi">
             <h2 class="titulo aberracion">Hola, soy Maty</h2>
-            <!-- Carrusel infinito provisorio -->
+            <!-- Carrusel con tiny slider -->
             <div class="" id="carrusel-sobreMi">
                 <img src="images/maty4.jpg" alt="Foto de Maty tatuando">
                 <img src="images/maty2.jpg" alt="Foto de Maty tatuando">
@@ -58,7 +66,7 @@
 
         <section id="trabajos">
             <h2 class="titulo aberracion">Mis trabajos</h2>
-            <!-- Carrusel "manual" provisorio -->
+            <!-- Carrusel con tiny slider -->
             <div class="" id="carrusel-trabajos">
                 <img src="images/tattoo1.jpg" alt="tatuaje">
                 <img src="images/tattoo2.jpg" alt="tatuaje">
@@ -78,15 +86,15 @@
         <section id="faq">
             <h2 class="titulo aberracion">Preguntas frecuentes</h2>
 
+            <!-- Imagen para acompañar la lectura -->
             <div class="img-medio">
-                <img src="images\maty5horizontal.jpg" alt="" id="imgfaq">
+                <img src="images/maty5horizontal.jpg" alt="" id="imgfaq">
             </div>
-            
+
 
             <ul class="faq-desplegables">
                 <li>
                     <div class="faq-item" onclick="">
-                        <!-- La idea sería que al tocar se abra y aparezca la respuesta. -->
                         <div class="faq-pregunta">
                             <p>¿Cuánto puede salir mi tatuaje?</p>
                             <i class="fa-solid fa-caret-down"></i>
@@ -152,30 +160,47 @@
 
         <section id="contacto">
             <h2 class="titulo aberracion">Contacto</h2>
+
+            <!-- Hero Image con CTA -->
+
             <div class="hero centrado">
                 <button class="botonNegro aberracion">Quiero un Tatto</button>
             </div>
         </section>
     </main>
 
+    <!-- Footer sencillo para poner enlaces a las redes sociales -->
+
     <footer>
         <div class="iconos">
-            <a class="icono-redes" href="" target="_blank"><span class="nombre-red">Instagram </span><img src="images/instagram.png" alt=""></a>
+            <a class="icono-redes" href="" target="_blank"><span class="nombre-red">Instagram </span><img
+                    src="images/instagram.png" alt=""></a>
         </div>
         <div class="iconos">
-            <a class="icono-redes" href="" target="_blank"><span class="nombre-red">Facebook </span><img src="images/facebook.png" alt=""></a>
+            <a class="icono-redes" href="" target="_blank"><span class="nombre-red">Facebook </span><img
+                    src="images/facebook.png" alt=""></a>
         </div>
         <div class="iconos">
-            <a class="icono-redes" href="" target="_blank"><span class="nombre-red">TikTok </span><img src="images/tiktok.png" alt=""></a>
+            <a class="icono-redes" href="" target="_blank"><span class="nombre-red">TikTok </span><img
+                    src="images/tiktok.png" alt=""></a>
         </div>
     </footer>
+
+    <!-- aberración.js contiene funciones para el sketch.js de p5js. Está separado para mantener el orden si en algún momento se necesitan ejecutar otras animaciones o cambios con p5js, ya que no maneja bien varios sketchs en la misma página sin complicar el código -->
 
     <script src="js/aberracion.js"></script>
     <script src="js/sketch.js"></script>
 
+    <!-- js de tiny slider (carruseles) -->
+
     <script src="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.4/min/tiny-slider.js"></script>
 
+    <!-- script que controla los carruseles de tiny slider -->
+
     <script src="js/carrusel.js"></script>
+
+    <!-- script de uso general del index, actualmente solo controla la apertura de las preguntas frecuentes -->
+
     <script src="js/main.js"></script>
 </body>
 
