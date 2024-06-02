@@ -3,8 +3,8 @@ document.addEventListener('DOMContentLoaded', function () {
         '#carrusel-bandas',
         '#carrusel-cartoon',
         '#carrusel-fineline',
-        '#carrusel-fixcover',
-        '#carrusel-fullcolor',
+        '#carrusel-futbol',
+        '#carrusel-tradicional',
         '#carrusel-lettering'
     ];
 
@@ -16,9 +16,13 @@ document.addEventListener('DOMContentLoaded', function () {
             autoplay: true,
             autoplayTimeout: 3000,
             speed: 600,
-            autoplayHoverPause: true,
+            autoplayHoverPause: false,          
+            autoplayButtonOutput:false,
+            edgePadding: 50,
             controls: false,
             nav: false,
+            mouseDrag:true,
+
             responsive: {
                 0: {
                     items: 1,
