@@ -105,7 +105,7 @@ section>* {
 
 .hero {
     display: block;
-    background-image: linear-gradient(rgba(0, 0, 73, 0.507), rgba(0, 0, 77, 0.322)), url('/images/maty4.jpg');
+    background-image: linear-gradient(rgba(0, 0, 73, 0.507), rgba(0, 0, 77, 0.322)), url('../images/maty4.jpg');
     height: 40vw;
     background-position: top;
     background-repeat: no-repeat;
@@ -283,12 +283,12 @@ footer {
 
     .nav-seccion {
         padding: 0 20px;
-        font-size: 1.2rem;
+        font-size: 0.7rem;
     }
 
     .botonBlanco {
-        padding: 5px 18px;
-        font-size: 1rem;
+        padding: 5px 8px;
+        font-size: 0.7rem;
     }
 
     .titulo {

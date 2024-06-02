@@ -12,13 +12,9 @@ document.addEventListener('DOMContentLoaded', function () {
         tns({
             container: slider,
             items: 3,
-            slideBy: 'page',
-            autoplay: true,
-            autoplayTimeout: 3000,
-            speed: 600,
-            autoplayHoverPause: false,          
+            slideBy: 1,       
             autoplayButtonOutput:false,
-            edgePadding: 50,
+            center: true,
             controls: false,
             nav: false,
             mouseDrag:true,
@@ -30,7 +26,7 @@ document.addEventListener('DOMContentLoaded', function () {
                     items: 2,
                 },
                 1000: {
-                    items: 3,
+                    items: 2.6,
                 }
             }
         });

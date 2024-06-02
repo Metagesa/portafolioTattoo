@@ -25,6 +25,10 @@ form label {
     border: 2px solid red !important;
 }
 
+.texto-opcional {
+    font-size: 80%;
+}
+
 
 form input[type="text"],
 form input[type="email"],
