@@ -84,17 +84,6 @@ nav ul li {
     display: none;
 }
 
-.botonBlanco {
-    font-family: "League Spartan", sans-serif;
-    font-optical-sizing: auto;
-    font-style: normal;
-    font-size: 90%;
-    font-weight: bold;
-    padding: 10px 20px;
-    border-radius: 20px;
-    border: 0;
-}
-
 a {
     color: rgb(255, 255, 255);
     text-decoration: none;
@@ -136,14 +125,25 @@ i {
     font-size: 12px;
 }
 
+.botonBlanco {
+    font-family: "League Spartan", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    font-size: 1.2rem;
+    font-weight: bold;
+    padding: 15px 40px;
+    border-radius: 22px;
+    border: 0;
+}
+
 .botonNegro {
     font-family: "League Spartan", sans-serif;
     font-optical-sizing: auto;
     font-style: normal;
-    font-size: 100%;
+    font-size: 1.5rem;
     font-weight: bold;
-    padding: 13px 40px;
-    border-radius: 20px;
+    padding: 20px 45px;
+    border-radius: 30px;
     border: 0;
     background-color: #000000;
     color: rgb(255, 255, 255);
@@ -278,12 +278,17 @@ footer {
 
     .logo {
         font-size: 150%;
+        margin: 0;
     }
 
-    .botonBlanco,
-    .botonNegro {
-        padding: 10px 15px;
-        font-size: 80%;
+    .nav-seccion {
+        padding: 0 20px;
+        font-size: 1.2rem;
+    }
+
+    .botonBlanco {
+        padding: 5px 18px;
+        font-size: 1rem;
     }
 
     .titulo {
@@ -295,6 +300,7 @@ footer {
         justify-content: center;
         align-items: center;
         width: 100%;
+        margin: 0;
         margin-bottom: 20px;
     }
 
@@ -327,10 +333,19 @@ footer {
 
     .logo {
         font-size: 120%;
+        margin: 0 20px 0 0;
     }
 
-    .botonBlanco,
-    .botonNegro {
+    .cta {
+        margin-right: 20px;
+    }
+
+    .nav-seccion {
+        padding: 0 20px;
+        font-size: 1.1rem;
+    }
+
+    .botonBlanco {
         padding: 10px 18px;
         font-size: 85%;
     }
@@ -344,6 +359,7 @@ footer {
         justify-content: center;
         align-items: center;
         width: 100%;
+        margin: 0;
         margin-bottom: 20px;
     }
 
@@ -382,22 +398,22 @@ footer {
         font-size: 140%;
     }
 
-    .botonBlanco,
-    .botonNegro {
-        padding: 13px 40px;
-        font-size: 100%;
-    }
-
     #faq {
         height: 50vw;
     }
 
     .img-medio {
+        background-image: url('../images/maty5.jpg');
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
         display: flex;
         overflow: hidden;
         justify-content: center;
         align-items: center;
+        object-fit: fill;
         width: 50%;
+        height: auto;
         margin: 0 0 20px 20px;
     }
 
@@ -409,8 +425,16 @@ footer {
 
 @media (min-width: 1200px) {
 
+    body * {
+        font-size: 1.5rem;
+    }
+
     #faq {
         height: 40vw;
+    }
+
+    #imgfaq {
+        visibility: hidden;
     }
 
     .iconos {
