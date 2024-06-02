@@ -52,6 +52,16 @@ nav ul li {
     margin-right: 30px;
 }
 
+.boton-cta:hover {
+    background-color: greenyellow;
+    color: #000000;
+}
+
+.boton-cta:active {
+    background-color: mediumvioletred;
+    color: white;
+}
+
 .logo {
     display: flex;
     align-items: center;
