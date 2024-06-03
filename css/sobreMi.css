@@ -17,6 +17,11 @@ p {
     height: 30vw;
     width: 100%;
     overflow: hidden;
+    margin-top: 20px;
+}
+
+#primerbanner {
+    margin-top: 0;
 }
 
 .banner-sobreMi img {
@@ -42,6 +47,17 @@ p {
     justify-content: center;
 }
 
+.titulo-intro {
+    text-align: center;
+    font-size: 1.6rem;
+}
+
 footer {
     margin-top: 20px;
+}
+
+iframe {
+    width: 100%;
+    height: 30vw;
+    margin-bottom: 20px;
 }

@@ -18,7 +18,7 @@
         integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
         crossorigin="anonymous" referrerpolicy="no-referrer">
 
-     <!-- librerías: p5js para enimación de aberración cromática con Perlin noise -->
+    <!-- librerías: p5js para enimación de aberración cromática con Perlin noise -->
     <script src="https://cdn.jsdelivr.net/npm/p5@1.9.4/lib/p5.min.js"></script>
 
     <!-- Título y links locales -->
@@ -50,9 +50,11 @@
     </header>
 
     <main>
-        <div class="banner-sobreMi">
+        <div class="banner-sobreMi" id="primerbanner">
             <img src="../images/maty2.jpg" alt="">
         </div>
+
+        <h3 class="titulo-intro">Quién soy</h3>
 
         <p>Hola, soy Maty, y desde muy chico me interesó el dibujo y todo lo relacionado con el arte. <br><br>
             Mi entrada en el universo del tatuaje como aprendiz ocurrió entre 2007 y 2008, gracias al aliento de mi
@@ -64,14 +66,14 @@
             con muchísimos artistas y amigos de los cuales seguí aprendiendo.<br><br>
         </p>
 
-        <div class="centrado">
-            <button class="botonNegro boton-cta" 
-            onclick="window.location.href='formulario.html'">Quiero un Tattoo</button>
-        </div>
+        <h3 class="titulo-intro">Mi estudio</h3>
 
-        <div class="banner-sobreMi">
-            <img src="../images/maty3.jpg" alt="">
-        </div>
+        <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3289.4858949969!2d-58.518749423482056!3d-34.46519605019715!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcb02e3f5019bf%3A0x2997695690bc1488!2sJuan%20Jos%C3%A9%20D%C3%ADaz%20969%2C%20B1642CII%20San%20Isidro%2C%20Provincia%20de%20Buenos%20Aires!5e0!3m2!1ses!2sar!4v1717382045495!5m2!1ses!2sar"
+            width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+        <h3 class="titulo-intro"></h3>
 
         <p>En ese proceso artístico me pareció ideal sumar conocimiento básico de higiene y bioseguridad, así que me
             formé en estas áreas con los cursos que ofrecía la provincia y sume por mi cuenta otros de internet que
@@ -86,39 +88,38 @@
             atelier/estudio en una de las mejores y más tranquilas zonas de San Isidro.<br><br>
         </p>
 
-        <div class="centrado">
-            <button class="botonNegro boton-cta"
-            onclick="window.location.href='formulario.html'">Quiero un Tattoo</button>
-        </div>
-
         <div class="banner-sobreMi">
             <img src="../images/maty4.jpg" alt="">
         </div>
-        
+
         <p>Hoy en el año 2023, con ya casi 16 años tatuando y aún disfrutando cada línea y cada punto en mi propio
             estudio, ofrezco a mi parecer el servicio más completo posible: un ambiente privado, tranquilo con música
             relajada y mucha comodidad para que el proceso sea lo más llevadero posible.<br><br>
             Como tatuador, debo lograr una conexión de confianza con mi cliente y comprender realmente lo que busca en
             ese tatuaje. Siempre recomiendo además alimentarse bien antes de la sesión y no consumir alcohol o drogas
             para no complicar la inyección de tinta.</p>
+
         <div class="centrado firma">
             <p class="logo" id="logoM">Maty<br>Rego</p>
         </div>
         <div class="centrado">
-            <button class="botonNegro boton-cta"
-            onclick="window.location.href='formulario.html'">Quiero un Tattoo</button>
+            <button class="botonNegro boton-cta" onclick="window.location.href='formulario.html'">Quiero un
+                Tattoo</button>
         </div>
     </main>
 
     <footer>
         <div class="iconos">
-            <a class="icono-redes" href="" target="_blank"><span class="nombre-red">Instagram </span><img src="../images/instagram.png" alt=""></a>
+            <a class="icono-redes" href="" target="_blank"><span class="nombre-red">Instagram </span><img
+                    src="../images/instagram.png" alt=""></a>
         </div>
         <div class="iconos">
-            <a class="icono-redes" href="" target="_blank"><span class="nombre-red">Facebook </span><img src="../images/facebook.png" alt=""></a>
+            <a class="icono-redes" href="" target="_blank"><span class="nombre-red">Facebook </span><img
+                    src="../images/facebook.png" alt=""></a>
         </div>
         <div class="iconos">
-            <a class="icono-redes" href="" target="_blank"><span class="nombre-red">TikTok </span><img src="../images/tiktok.png" alt=""></a>
+            <a class="icono-redes" href="" target="_blank"><span class="nombre-red">TikTok </span><img
+                    src="../images/tiktok.png" alt=""></a>
         </div>
     </footer>
 
@@ -126,6 +127,12 @@
 
     <script src="../js/aberracion.js"></script>
     <script src="../js/sketch.js"></script>
+
+    <script>(g => { var h, a, k, p = "The Google Maps JavaScript API", c = "google", l = "importLibrary", q = "__ib__", m = document, b = window; b = b[c] || (b[c] = {}); var d = b.maps || (b.maps = {}), r = new Set, e = new URLSearchParams, u = () => h || (h = new Promise(async (f, n) => { await (a = m.createElement("script")); e.set("libraries", [...r] + ""); for (k in g) e.set(k.replace(/[A-Z]/g, t => "_" + t[0].toLowerCase()), g[k]); e.set("callback", c + ".maps." + q); a.src = `https://maps.${c}apis.com/maps/api/js?` + e; d[q] = f; a.onerror = () => h = n(Error(p + " could not load.")); a.nonce = m.querySelector("script[nonce]")?.nonce || ""; m.head.append(a) })); d[l] ? console.warn(p + " only loads once. Ignoring:", g) : d[l] = (f, ...n) => r.add(f) && u().then(() => d[l](f, ...n)) })
+            ({ key: "AIzaSyAvOR3naQOfWoH6f4J2m1YjdPkgZuwyAxc", v: "weekly" });</script>
+
+    <script src="../js/sobremi.js"></script>
+
 </body>
 
 </html>
