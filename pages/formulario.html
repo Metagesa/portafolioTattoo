@@ -26,6 +26,17 @@
 
     <!-- librerías: p5js para enimación de aberración cromática con Perlin noise -->
     <script src="https://cdn.jsdelivr.net/npm/p5@1.9.4/lib/p5.min.js"></script>
+
+    <!-- API de emailJS -->
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+    </script>
+    <script type="text/javascript">
+        (function () {
+            emailjs.init({
+                publicKey: "siQESwsk7aPnpXGV9",
+            });
+        })();
+    </script>
 </head>
 
 <body>
@@ -56,7 +67,8 @@
                 <label for="mensaje">Mensaje:</label>
                 <textarea id="mensaje" name="mensaje" required></textarea>
 
-                <label for="referencia">Imagen de referencia: <span class="texto-opcional">(opcional, máximo 3mb)</span></label>
+                <label for="referencia">Imagen de referencia: <span class="texto-opcional">(opcional, máximo
+                        3mb)</span></label>
                 <input type="file" id="referencia" name="referencia" accept="image/*">
 
                 <button type="submit" class="botonNegro aberracion">Enviar</button>
